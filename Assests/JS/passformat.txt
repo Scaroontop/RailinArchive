@@ -1,0 +1,20 @@
+function submit() {                              
+    if (document.getElementById('secretgohere').value == ""){
+        isorno.style.display = "block";           
+        isorno.style.color = "#7cfc00";
+        isorno.innerHTML = "Secret Working!";            
+        setTimeout(fortnite, 2000);
+    } else {
+        isorno.style.display = "block";
+        isorno.style.color = "#7cfc00";
+        isorno.innerHTML = "Secret Working!";
+        setTimeout(fortnite, 2000);
+    } 
+} else {
+    isorno.style.display = "block";
+    isorno.style.color = "#ff0000";
+    isorno.innerHTML = "Secret Invaild.";
+
+    setTimeout(fortnite, 2000);
+}
+}
