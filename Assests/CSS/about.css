@@ -1,0 +1,14 @@
+.about h1{
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.about p{
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.about a{
+    color: #ADD8E6;
+}

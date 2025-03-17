@@ -1,0 +1,35 @@
+.yessss div{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.button {
+  margin-top: 15px;
+  border: 0;
+  margin-left: 20px;
+  background: rgb(105, 105, 105, 0.6);
+  border: 3px solid rgba(105,105,105, 0.1);
+  border-radius: 19px;
+  width: fit-content;
+  padding: 10px;
+  color: white;
+  box-shadow: 0 0 10px 5px rgba(105,105,105, 0.5);
+  animation: downcenta 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.button:hover {
+  cursor: pointer;
+  animation: upcenta 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.tiny{
+  text-align: center;
+  font-size: 30px;
+}
+.verytiny{
+  text-align: center;
+  font-size: 15px;
+}
+.hidden {
+  display: none;
+}

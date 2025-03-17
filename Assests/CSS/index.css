@@ -1,0 +1,35 @@
+.welcome{
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+}
+.welcome h1{ 
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 3px 3px black;
+    color: #FFA500;
+}
+.🤪{
+    position: absolute;
+    bottom: 45%;
+    width: 100%;
+}
+.🤪 h1{ 
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px black;
+    font-size: 40px
+}
+@media (max-width: 450px){
+    .welcome h1{ 
+        font-size: 25px;
+    }
+    .🤪 h1{ 
+        font-size: 25px;
+    }
+    .bar p {
+        font-size: 0;
+        line-height: 0;
+        padding: 0;
+    }
+}
