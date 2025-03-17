@@ -1,0 +1,332 @@
+[
+    {
+        "game": "Subway Surfers",
+        "gameroot": "/files/Subway/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Slope",
+        "gameroot": "/files/Slope/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpeg"
+    },
+    {
+        "game": "Retro Bowl",
+        "gameroot": "/files/Retro/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "New Super Mario Brothers Online",
+        "gameroot": "/files/NSMB/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Friday Night Funkin",
+        "gameroot": "/files/Friday/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.gif"
+    },
+    {
+        "game": "Cookie Clicker",
+        "gameroot": "/files/Cookie/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Super Mario 64",
+        "gameroot": "/files/64-Mario/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "OvO",
+        "gameroot": "/files/0v0/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Backrooms",
+        "gameroot": "/files/Back/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Backrooms 2D",
+        "gameroot": "/files/br2d/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Adventure with Anxiety",
+        "gameroot": "/files/anxiety/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "We Become What We Behold",
+        "gameroot": "/files/wbwwb/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "2048",
+        "gameroot": "/files/20/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Gura Tambourine",
+        "gameroot": "/files/gura/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Bacon May Die",
+        "gameroot": "/files/bacon/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "P.Craft",
+        "gameroot": "/files/pcraf/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "1v1.lol",
+        "gameroot": "/files/lol/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Guess the Number Game",
+        "gameroot": "/files/GTN/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Snake",
+        "gameroot": "/files/snak/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Fortnite - Xbox Cloud",
+        "gameroot": "/files/fn/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Baldi's Basics",
+        "gameroot": "/files/bald/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.webp"
+    },
+    {
+        "game": "Tic-Tac-Toe",
+        "gameroot": "/files/tic/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Rock Paper Scissors",
+        "gameroot": "/files/rps/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.webp"
+    },
+    {
+        "game": "territorial.io",
+        "gameroot": "/files/ter/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.webp"
+    },
+    {
+        "game": "Paper.io 2",
+        "gameroot": "/files/paper2/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jfif"
+    },
+    {
+        "game": "Paper.io 3D",
+        "gameroot": "/files/paper3/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "NBA Jam",
+        "gameroot": "/files/nj/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Gun Mayhem 2 More Mayhem",
+        "gameroot": "/files/gm2/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Gun Mayhem",
+        "gameroot": "/files/gm/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Fancy Pants Adventures",
+        "gameroot": "/files/fp/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "The Fancy Pants Adventure World 2",
+        "gameroot": "/files/fp2/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Drive Mad",
+        "gameroot": "/files/Drive/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Roblox - Now.gg",
+        "gameroot": "/files/rx/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Plants VS Zombies",
+        "gameroot": "/files/pvz/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Geometry Dash",
+        "gameroot": "/files/gd/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Terraria",
+        "gameroot": "/files/t/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Getting over it",
+        "gameroot": "/files/goi/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Paper Minecraft",
+        "gameroot": "/files/pm/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Moto x3m",
+        "gameroot": "/files/m/",
+        "gamefile": "index.html",
+        "gameicon": "splash.jpg"
+    },
+    {
+        "game": "Moto x3m - Winter",
+        "gameroot": "/files/mw/",
+        "gamefile": "index.html",
+        "gameicon": "download.jpeg"
+    },
+    {
+        "game": "Moto x3m - Spooky",
+        "gameroot": "/files/ms/",
+        "gamefile": "index.html",
+        "gameicon": "splash.jpeg"
+    },
+    {
+        "game": "Moto x3m - Pool Party",
+        "gameroot": "/files/mp/",
+        "gamefile": "index.html",
+        "gameicon": "splash.jpg"
+    },
+    {
+        "game": "Vex 6",
+        "gameroot": "/files/v6/",
+        "gamefile": "index.html",
+        "gameicon": "icon.png"
+    },
+    {
+        "game": "Vex 7",
+        "gameroot": "/files/v7/",
+        "gamefile": "index.html",
+        "gameicon": "icon.png"
+    },
+    {
+        "game": "Among Us",
+        "gameroot": "/files/au/",
+        "gamefile": "index.html",
+        "gameicon": "game.jpg"
+    },
+    {
+        "game": "Toss the Turtle",
+        "gameroot": "/files/ttt/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Learn to Fly",
+        "gameroot": "/files/ltf/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Learn to Fly 2",
+        "gameroot": "/files/ltf2/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Doge Miner",
+        "gameroot": "/files/dogem/",
+        "gamefile": "index.html",
+        "gameicon": "game.png"
+    },
+    {
+        "game": "Trimps",
+        "gameroot": "/files/tr/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Basket Random",
+        "gameroot": "/files/br/",
+        "gamefile": "index.html",
+        "gameicon": "splash.jpeg"
+    },
+    {
+        "game": "Impossible Quiz",
+        "gameroot": "/files/iq/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Rooftop Snipers",
+        "gameroot": "/files/rs/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Getaway Shootout",
+        "gameroot": "/files/gs/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Basketball Stars",
+        "gameroot": "/files/bs/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    }
+]
