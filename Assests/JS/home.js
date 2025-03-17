@@ -1,32 +1,45 @@
-var says = 
-[
-    "uh",
-    "my coder friends copying me and hes better at coding then me",
-    "Schools Pretty Boring",
-    "This Websites Trash", 
-    "i took too long making this :(", 
-    "AOSUDHASIUD4u3ghiuj34hgi34gH", 
-    "tinyurl.com/RailinDev", 
-    "I stole 3kh0's idea to make a website >:)", 
-    "hotline bling", 
-    "all 1v1lol's are blocked at my school", 
-    "the person who made this websites pretty cool", 
-    "what day is it?", 
-    "fortnite battl pass", 
-    "i made this on the weekend :((((",
-    "hiiii aiden :)",
-    "i hate myself",
-    "im in love with a emo gorl 💅",
-    "amog",
-    "💀",
-    "hey e-kitten",
-    "rip 3kh0"
-]
+const welcomeMessages = [
+    "Welcome to Railin Games!",
+    "Ready to Play?",
+    "Game Time!",
+    "Let's Have Some Fun!",
+    "Best Games Collection",
+    "Your Gaming Hub",
+    "Time to Play!",
+    "Game On!",
+    "Choose Your Game",
+    "Ready Player One",
+    "Level Up!",
+    "Play Now",
+    "Gaming Time",
+    "New Games Added!",
+    "Explore & Play"
+];
 
 function pageLoad() {
-    document.getElementById('randomting').innerHTML = says[Math.floor(Math.random() * says.length)]
+    const randomElement = document.getElementById('randomting');
+    if (randomElement) {
+        randomElement.innerHTML = getRandomMessage();
+    }
+    checkAdBlocker();
 }
 
-if (window.location.href.match("cartxrr")) {
-    alert("if you have ad blocker on please disable it! it helps us run the website thanks 💓");
+function getRandomMessage() {
+    return welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)];
 }
+
+function checkAdBlocker() {
+    if (window.location.href.includes("railin")) {
+        const adBlockInfo = document.createElement('div');
+        adBlockInfo.className = 'ad-block-info';
+        adBlockInfo.innerHTML = `
+            <p>Please consider disabling your ad blocker to support us! 💖</p>
+            <button onclick="this.parentElement.style.display='none'">OK</button>
+        `;
+        document.body.appendChild(adBlockInfo);
+    }
+}
+
+// Export functions for use in other files
+window.pageLoad = pageLoad;
+window.getRandomMessage = getRandomMessage;
