@@ -4,32 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Railin'</title>
-    <link rel="icon" type="image/png" href="./Assests/Imgs/Logo.png">
-    <link rel="stylesheet" type="text/css" href="./Assests/CSS/main.css">
+    <!-- Meta Tags -->
+    <meta property="og:title" content="Railin"/>
+    <meta property="og:description" content="Best game site on the block 😎"/>
+    <meta property="og:image" content="https://railingames.github.io/imgs/banner.png"/>
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./Assests/CSS/main.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/bg.css">
     <link rel="stylesheet" type="text/css" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./Assests/Imgs/Logo.png">
+    
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/11fe60c87a.js" crossorigin="anonymous"></script>
+    <script src="/js/settings.js"></script>
+    <script src="/js/main.js"></script>
 </head>
-<body class="default">
+<body class="default" onload="pageLoad()">
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation Bar -->
     <nav class="Navigation">
         <div class="Navigation-Container">
-            <a class="Navigation-Image" href="./"><img src="./Assests/Imgs/Logo.png"></img></a>
+            <a class="Navigation-Image" href="./"><img src="./Assests/Imgs/Logo.png" alt="Logo"></a>
             <ul>
-                <li class="Navigation-Button"><a href="./"><i class="las la-home"></i><p>Home</p></a></li>
-                <li class="Navigation-Button"><a href="./g.html"><i class="las la-file"></i><p>Projects</p></a></li>
-                <li class="Navigation-Button"><a href="./e.html"><i class="las la-hourglass-half"></i><p>Emulator</p></a></li>
-                <li class="Navigation-Button"><a href="./settings.html"><i class="las la-cog"></i><p>Settings</p></a></li>
-            <ul>
+                <li class="Navigation-Button"><a href="/"><i class="las la-home"></i><p>Home</p></a></li>
+                <li class="Navigation-Button"><a href="/g.html"><i class="las la-file"></i><p>Projects</p></a></li>
+                <li class="Navigation-Button"><a href="/e.html"><i class="las la-hourglass-half"></i><p>Emulator</p></a></li>
+                <li class="Navigation-Button"><a href="/settings.html"><i class="las la-cog"></i><p>Settings</p></a></li>
+                <li class="Navigation-Button"><a href="/pass.html"><i class="fa-solid fa-key"></i><p>Secrets</p></a></li>
+            </ul>
         </div>
     </nav>
 
+    <!-- Settings Content -->
     <div>
         <center><h1 style="line-height: 100px; color: var(--text-color1)">Settings</h1></center>
         <hr>
     </div>
 
     <center>
-        <h1 class="Settings-Header">Apperence</h1>
+        <!-- Appearance Settings -->
+        <h1 class="Settings-Header">Appearance</h1>
         <div class="Settings-Container">
-            <!-- ARTCLASS GAVE ME THIS IDEA THANK YOU!!! -->
             <button class="Normal-Button" onclick='localStorage.removeItem("cloak"); window.location.reload();'><img src="./Assests/Imgs/Logo.png" title="Default/Railin'"></button>
             <button class="Normal-Button" onclick='setIcon("./Assests/Imgs/cloaks/classroom.png", "Home");'><img src="./Assests/Imgs/cloaks/classroom.png" title="Google Classroom"></button>
             <button class="Normal-Button" onclick='setIcon("./Assests/Imgs/cloaks/canvas.png", "Dashboard");'><img src="./Assests/Imgs/cloaks/canvas.png" title="Canvas"></button>
@@ -37,6 +59,8 @@
             <button class="Normal-Button" onclick='setIcon("./Assests/Imgs/cloaks/google.png", "Google");'><img src="./Assests/Imgs/cloaks/google.png" title="Google"></button>
             <button class="Normal-Button" onclick='setIcon("./Assests/Imgs/cloaks/drive.png", "My Drive - Google Drive")'><img src="./Assests/Imgs/cloaks/drive.png" title="Google Drive"></button>
         </div>
+
+        <!-- Theme Selection -->
         <div class="Settings-Container">
             <select onselect="setTheme()" id="themes" class="Normal-Button">
                 <option value=" ">Dark Theme</option>
@@ -45,27 +69,54 @@
             </select> 
         </div>
 
+        <!-- Panic Button Settings -->
         <h1 class="Settings-Header">Panic Button</h1>
         <div class="Settings-Container">
             <input class="Settings-TextInput customPanicKey" type="text" placeholder="Enter Key">
             <button class="Normal-Button" onclick="panic('key')">Set Panic Key</button>
-        </div> <div class="Settings-Container">
+        </div>
+        <div class="Settings-Container">
             <input class="Settings-TextInput customPanicUrl" type="text" placeholder="Enter URL">
             <button class="Normal-Button" onclick="panic('url')">Set Panic URL</button>
         </div>
     </center>
 
-    <script src="./Assests/JS/options.js"></script>
+    <!-- Scripts -->
+    <script src="/js/bg.js"></script>
     <script>
-        function setIcon(img, name) { localStorage.removeItem('cloak'); var icon = JSON.parse(localStorage.getItem("cloak")) || []; icon.push({ img: img, name: name }); localStorage.setItem("cloak", JSON.stringify(icon)); window.location.reload(); }
-        document.getElementById('themes').addEventListener('change', () => { localStorage.setItem("theme", document.getElementById('themes').value); window.location.reload(); });
+        particlesJS.load('particles-js', '/json/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+
+        function setIcon(img, name) {
+            localStorage.removeItem('cloak');
+            var icon = JSON.parse(localStorage.getItem("cloak")) || [];
+            icon.push({ img: img, name: name });
+            localStorage.setItem("cloak", JSON.stringify(icon));
+            window.location.reload();
+        }
+
+        document.getElementById('themes').addEventListener('change', () => {
+            localStorage.setItem("theme", document.getElementById('themes').value);
+            window.location.reload();
+        });
+
         function panic(v) {
             let panic = JSON.parse(localStorage.getItem('panic')) || [{ url: "", key: "" }];
             let key = document.querySelector(".customPanicKey").value;
             let url = document.querySelector(".customPanicUrl").value;
-            if (v === 'key') { panic[0].key = key; } else if (v === 'url') { panic[0].url = url; }
+            if (v === 'key') { panic[0].key = key; }
+            else if (v === 'url') { panic[0].url = url; }
             localStorage.setItem("panic", JSON.stringify(panic));
-        }           
+        }
+    </script>
+    
+    <script src="./Assests/JS/options.js"></script>
+    <script src="/js/widget.js" async defer>
+        new Crate({
+            server: '1081688236021256262',
+            channel: '1097655748051357766'
+        })
     </script>
 </body>
 </html>
