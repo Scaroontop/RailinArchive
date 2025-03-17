@@ -4,41 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Railin'</title>
-    <link rel="icon" type="image/png" href="./Assests/Imgs/Logo.png">
-    <link rel="stylesheet" type="text/css" href="./Assests/CSS/main.css">
-    <link rel="stylesheet" type="text/css" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-</head>
-<body class="default">
     
+    <!-- Meta Tags -->
+    <meta property="og:title" content="Railin'"/>
+    <meta property="og:description" content="Best game site on the block 😎"/>
+    <meta property="og:image" content="https://railingames.github.io/imgs/banner.png"/>
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./Assests/CSS/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <link rel="stylesheet" type="text/css" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./Assests/Imgs/Logo.png">
+    
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/11fe60c87a.js" crossorigin="anonymous"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body class="default" onload="pageLoad()">
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation Bar -->
     <nav class="Navigation">
         <div class="Navigation-Container">
-            <a class="Navigation-Image" href="./"><img src="./Assests/Imgs/Logo.png"></img></a>
+            <a class="Navigation-Image" href="./"><img src="./Assests/Imgs/Logo.png" alt="Logo"></a>
             <ul>
-                <li class="Navigation-Button"><a href="./"><i class="las la-home"></i><p>Home</p></a></li>
-                <li class="Navigation-Button"><a href="./g.html"><i class="las la-file"></i><p>Projects</p></a></li>
-                <li class="Navigation-Button"><a href="./e.html"><i class="las la-hourglass-half"></i><p>Emulator</p></a></li>
-                <li class="Navigation-Button"><a href="./settings.html"><i class="las la-cog"></i><p>Settings</p></a></li>
-            <ul>
+                <li class="Navigation-Button"><a href="/"><i class="las la-home"></i><p>Home</p></a></li>
+                <li class="Navigation-Button"><a href="/g.html"><i class="las la-gamepad"></i><p>Games</p></a></li>
+                <li class="Navigation-Button"><a href="/e.html"><i class="las la-hourglass-half"></i><p>Emulator</p></a></li>
+                <li class="Navigation-Button"><a href="/settings.html"><i class="las la-cog"></i><p>Settings</p></a></li>
+            </ul>
         </div>
     </nav>
 
-    <div class="Index-Container"> <div>
+    <!-- Main Content -->
+    <div class="Index-Container">
+        <div>
             <h1>Railin</h1>
             <p onclick="splashText()" class="Index-SplashText">Enable Javascript</p>
-    </div> </div>
+        </div>
+    </div>
 
+    <!-- Bottom Bar -->
     <div class="Index-BottomBar">
         <a href="https://github.com/RailinGames/RailinGames.github.io/issues">
             <h1 class="Index-BottomBar-Text">Report Bug</h1>
         </a>
         <a onclick="RailinAboutBlank()">
             <h1 class="Index-BottomBar-Text">Open in About:Blank</h1>
-        </a> 
+        </a>
         <a href="https://github.com/RailinGames/RailinGames.github.io">
             <h1 class="Index-BottomBar-Text">Github</h1>
-        </a> 
+        </a>
     </div>
 
+    <!-- Scripts -->
+    <script src="/js/bg.js"></script>
+    <script>
+        particlesJS.load('particles-js', '/json/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
     <script src="./Assests/JS/aboutblank.js"></script>
     <script src="./Assests/JS/options.js"></script>
     <script src="./Assests/JS/index.js"></script>
